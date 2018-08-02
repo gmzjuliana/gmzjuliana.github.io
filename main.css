@@ -3,6 +3,219 @@ body {
   margin: 0;
 }
 
+svg {
+  overflow: visible;
+}
+
+#J,
+#U,
+#L,
+#I,
+#A1,
+#N,
+#A2,
+#G,
+#O,
+#M,
+#E,
+#Z {
+  stroke: purple;
+  stroke-width: 0.5px;
+  fill: transparent;
+}
+
+#J {
+  stroke-dasharray: 75px;
+  stroke-dashoffset: -75px;
+  animation: J-anim 0.75s linear 0s forwards;
+}
+
+#U {
+  stroke-dasharray: 96px;
+  stroke-dashoffset: -96px;
+  animation: U-anim 0.75s linear 0.8s forwards;
+}
+
+#L {
+  stroke-dasharray: 67px;
+  stroke-dashoffset: -67px;
+  animation: L-anim 0.75s linear 1.6s forwards;
+}
+
+#I {
+  stroke-dasharray: 50px;
+  stroke-dashoffset: -50px;
+  animation: I-anim 0.75s linear 2.4s forwards;
+}
+
+#A1 {
+  stroke-dasharray: 78px;
+  stroke-dashoffset: -78px;
+  animation: A1-anim 0.75s linear 3.2s forwards;
+}
+
+#N {
+  stroke-dasharray: 103px;
+  stroke-dashoffset: -103px;
+  animation: N-anim 0.75s linear 4s forwards;
+}
+
+#A2 {
+  stroke-dasharray: 78px;
+  stroke-dashoffset: -78px;
+  animation: A2-anim 0.75s linear 4.8s forwards;
+}
+
+#G {
+  stroke-dasharray: 125px;
+  stroke-dashoffset: -125px;
+  animation: G-anim 0.75s linear 5.6s forwards;
+}
+
+#O {
+  stroke-dasharray: 50px;
+  stroke-dashoffset: -50px;
+  animation: O-anim 0.75s linear 6.4s forwards;
+}
+
+#M {
+  stroke-dasharray: 155px;
+  stroke-dashoffset: -155px;
+  animation: M-anim 0.75s linear 7.2s forwards;
+}
+
+#E {
+  stroke-dasharray: 67px;
+  stroke-dashoffset: -67px;
+  animation: E-anim 0.75s linear 8s forwards;
+}
+
+#Z {
+  stroke-dasharray: 93px;
+  stroke-dashoffset: -93px;
+  animation: Z-anim 0.75s linear 8.8s forwards;
+}
+
+@keyframes J-anim {
+  from {
+    stroke-dashoffset: -75px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes U-anim {
+  from {
+    stroke-dashoffset: -96px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes L-anim {
+  from {
+    stroke-dashoffset: -67px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes I-anim {
+  from {
+    stroke-dashoffset: -50px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes A1-anim {
+  from {
+    stroke-dashoffset: -78px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes N-anim {
+  from {
+    stroke-dashoffset: -103px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes A2-anim {
+  from {
+    stroke-dashoffset: -78px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes G-anim {
+  from {
+    stroke-dashoffset: -125px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes O-anim {
+  from {
+    stroke-dashoffset: -50px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes M-anim {
+  from {
+    stroke-dashoffset: -155px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes E-anim {
+  from {
+    stroke-dashoffset: -67px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes Z-anim {
+  from {
+    stroke-dashoffset: -93px;
+  }
+
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
 .title {
   font-family: "Eczar", serif;
   text-align: center;
