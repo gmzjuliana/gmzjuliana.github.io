@@ -1,0 +1,150 @@
+/* Declare colours */
+:root {
+  --background: rgba(8, 13, 11, 0.9);
+  --shadow: rgba(0, 0, 0, 0.75);
+  --paragraph: #b0bdaa;
+  --brightGreen: #2d3f25;
+  --sand: #e2d8a8;
+  --charmonman: "Charmonman", cursive;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+/******* RESET *********/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**** Now my stuff ****/
+
+body {
+  background-color: var(--background);
+}
+
+.circle-wrapper {
+  border-radius: 50%;
+  border: 2px solid var(--pine);
+  box-shadow: 8px 16px 32px 0px var(--shadow);
+  height: 300px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  width: 300px;
+}
+
+img {
+  max-height: 100%;
+}
+
+p {
+  color: var(--paragraph);
+  font-family: var(--montserrat);
+  margin-top: 16px;
+  text-align: center;
+  width: 80%;
+}
+
+li {
+  font-family: var(--montserrat);
+  color: var(--paragraph);
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: peachpuff;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.talks {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile ul {
+  padding: 0;
+  text-align: center;
+}
+
+.profile li {
+  display: block;
+  margin-bottom: 8px;
+}
+
+h1,
+h2 {
+  font-family: var(--charmonman);
+  color: var(--sand);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 738px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 582px;
+  }
+
+  p {
+    width: 582px;
+  }
+}
