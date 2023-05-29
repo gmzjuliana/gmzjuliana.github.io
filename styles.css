@@ -1,11 +1,11 @@
 /* Declare colours */
 :root {
-  --background: rgba(8, 13, 11, 0.9);
-  --shadow: rgba(0, 0, 0, 0.75);
-  --paragraph: #b0bdaa;
+  --background: #e9d2f4;
+  --shadow: #735d78;
+  --paragraph: #297045;
   --brightGreen: #2d3f25;
-  --sand: #e2d8a8;
-  --charmonman: "Charmonman", cursive;
+  --sand: #297045;
+  --charmonman: "Cherry Bomb One", cursive;
   --montserrat: "Montserrat", sans-serif;
 }
 
@@ -90,11 +90,11 @@ li {
 }
 
 a {
-  color: white;
+  color: #55a725;
 }
 
 a:visited {
-  color: peachpuff;
+  color: #735d78;
 }
 
 .profile {
